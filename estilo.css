@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #b9b9b9; 
+    color: #000000; 
+    padding: 20px;
+
+}
+
+
+header {
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 4px solid #b3b3b3; 
+    background-color: #969696;
+}
+h1 {
+    font-size: 54px;
+color: #ffffff;
+background-color: #342b57;
+padding: 15px;
+}
+
+h2 {
+font-size: 25px;
+color: #ffffff;
+background-color: #342b57;
+padding: 15px;
+box-sizing: border-box;
+}
+
+/* --- CONTINUAÇÃO DO SEU CSS --- */
+
+/* Configuração para as imagens ficarem bonitas */
+img {
+    font-size: 30px;
+    border: 3px solid #342b57; /* Borda roxa combinando com os títulos */
+    margin-bottom: 20px;       /* Espaço embaixo da imagem */
+}
+
+/* Títulos menores dentro da galeria */
+h3 {
+    margin-top: 25px;
+    color: #342b57;
+}
+
+/* O texto que explica a acessibilidade */
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilo simples para a tabela de dados */
+table {
+    width: 100%;
+    background-color: #ffffff; /* Fundo branco para destacar o texto */
+    margin-top: 15px;
+}
+
+th {
+    background-color: #342b57;
+    color: #ffffff;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+}
+
+/* Estilo do formulário de contato */
+fieldset {
+    border: 2px solid #342b57;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #f0f0f0; /* Fundo cinza claro para o formulário */
+}
+
+legend {
+    color: #342b57;
+    padding: 0 5px;
+}
+
+/* Caixa de texto e campos para digitar */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Botão de enviar */
+button {
+    background-color: #342b57;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Rodapé da página */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #342b57;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
