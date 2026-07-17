@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="estilo.css">
@@ -8,118 +8,129 @@
 </head>
 <body>
 
-    <header>
-        <h1><em>Ícones do Rock Brasileiro</em></h1>
-        <p>Uma homenagem às bandas que moldaram a música nacional nas últimas décadas.</p>
-    </header>
+    <div class="container">
 
-    <main>
-        <div>
-        <section>
-            <h2>História e Relevância</h2>
-            <p>O rock nacional ganhou força astronômica na década de 80, trazendo letras que misturavam crítica social, poesia e rebeldia. Bandas como Legião Urbana e Paralamas do Sucesso foram fundamentais para consolidar o gênero nas rádios e grandes estádios.</p>
-           
-            <p>Já nos anos 90, o Charlie Brown Jr. trouxe uma nova identidade, misturando o rock com skate e influências do punk, enquanto os Titãs se reinventavam a cada álbum, passando pelo pós-punk até o acústico de imenso sucesso.</p>
-        </section>
-        
-    
-        <section>
-            <h2>As Quatro Bandas Pilares</h2>
-           
-            <div><ul>
-                <li><strong>Titãs:</strong> Conhecidos pela diversidade de vocalistas e estilos.</li>
-                <li><strong>Charlie Brown Jr.:</strong> A voz do litoral e da cultura jovem dos anos 90/00.</li>
-                <li><strong>Paralamas do Sucesso:</strong> Mistura genial de rock com ritmos latinos e ska.</li>
-                <li><strong>Legião Urbana:</strong> A poesia de Renato Russo que marcou gerações.</li>
-            </ul>
-        </div> 
-        </section>
-        <section>
-            <h2>Comparativo das Bandas</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th><i>Banda</i></th>
-                        <th><i>Origem</i></th>
-                        <th><i>Vocalista Principal</i></th>
-                        <th><i>Ano de Formação</i></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Titãs</td>
-                        <td>São Paulo - SP</td>
-                        <td>Vários (Sérgio Britto, Branco Mello, etc)</td>
-                        <td rowspan="2">1982</td>
-                    </tr>
-                    <tr>
-                        <td>Charlie Brown Jr.</td>
-                        <td>Santos - SP</td>
-                        <td>Chorão</td>
-                       
-                    </tr>
-                    <tr>
-                        <td>Paralamas do Sucesso</td>
-                        <td>Seropédica - RJ</td>
-                        <td>Herbert Vianna</td>
-                        <td rowspan="2">1982</td>
-                    </tr>
-                    <tr>
-                        <td>Legião Urbana</td>
-                        <td>Brasília - DF</td>
-                        <td>Renato Russo</td>
-                       
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section>
-            <h2>Galeria e Acessibilidade</h2>
-            <div>
-                <h3><i> Banda Titãs</i></h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFA-RI3fBmYAVOU1lC_ECc8DhxVhNSf89kPw&s" alt="bandas Titãs " width="350" height="350"> 
-        </div>
+        <!-- Modificado: Cabeçalho agora utiliza Flexbox para colocar a logo ao lado dos títulos -->
+        <header class="topo-site">
+            <!-- Insira aqui o caminho correto da sua imagem no atributo src -->
+            <img src= "logo-tipo.jpg" alt="Logotipo do Site" class="logo-topo" />
+            
+            <!-- Os títulos ficam envelopados nesta div para continuarem um embaixo do outro -->
+            <div class="titulos-topo">
+                <h2><em>Bandas de Rock Brasileiras</em></h2>
+                <h3>Seja muito bem-vindo ao nosso portal!</h3>
+                <p>Ficamos felizes com a sua visita. Prepare-se para uma viagem no tempo através da história, das letras e dos acordes das quatro maiores bandas pilares que moldaram a identidade do Rock Nacional.</p>
+            </div>
+        </header>
 
-        <div>
-            <h3><i>Charlie brown Jr</i></h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTcia9y86kHJ0OJU8SD5IceXyTGGrfXiqgA&s"alt="Charlie brown Jr " width="350" height="350">
-        </div>
-        <div>
-            <h3><i>Banda paralamas do Sucesso</i></h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkXkvOA001o8JIHiAT1rYucdZ4ukDodMPqkA&s"alt="Banda paralamas do Sucesso " width="350" height="350"> </div>
-        </div>
-        <div>
-            <h3><i> Banda Legião Urbana</i></h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlMeoMzIpUdHrsPelFD5-jVCh6ck6uM96VA&s" alt="Banda Legião Urbana " width="350" height="350"> 
-        </div>
-            <p><strong>Nota sobre Acessibilidade:</strong> O atributo <code>alt</code> é essencial porque permite que softwares de leitura de tela descrevam a imagem para usuários com deficiência visual. Além disso, se a conexão cair e a imagem não carregar, o texto aparecerá no lugar, mantendo o contexto da página.</p>
-        </section>
-     <h3><i><strong>FALE CONOSCO!</strong></i></h3>
-<fieldset>
-<legend><strong>Dúvidas sobre Bandas</strong></legend>
-<form action="#"
-method="POST>
-<label for="nome">Nome:</label>
-<input type="text"
-id="nome" name="name" required>
-<br></br>
-<label
-for="email">E-mail:</label>
-<input type="email"
-id="email" name="email" requied>
-<br></br>
-<label for="mensagem">sua dúvida:</label>
-<texturea id="mensagem"
-name="mensagem" rows "8" required></texturea>
-<br></br>
-<button type="submit">enviar mensagem</button>
-</form>
-</sectio>
-   
-    </main>
-    <footer>
-        <p>Explore mais discografias no <a href="https://www.letras.mus.br" target="_blank" rel="noopener noreferrer">Portal Letras</a>.</p>
-    </footer>
+        <main>
+            <section>
+                <h2>História e Relevância</h2>
+                <p>O rock nacional ganhou força astronômica na década de 80, trazendo letras que misturavam crítica social, poesia e rebeldia. Bandas como Legião Urbana e Paralamas do Sucesso foram fundamentais para consolidar o gênero nas rádios e grandes estádios.</p>
+               
+                <p>Já nos anos 90, o Charlie Brown Jr. trouxe uma nova identidade, misturando o rock com skate e influências do punk, enquanto os Titãs se reinventavam a cada álbum, passando pelo pós-punk até o acústico de imenso sucesso.</p>
+            </section>
+            
+            <section>
+                <h2>As Quatro Bandas Pilares</h2>
+                <div>
+                    <ul>
+                        <li><strong>Titãs:</strong> Conhecidos pela diversidade de vocalistas e estilos.</li>
+                        <li><strong>Charlie Brown Jr.:</strong> A voz do litoral e da cultura jovem dos anos 90/00.</li>
+                        <li><strong>Paralamas do Sucesso:</strong> Mistura genial de rock com ritmos latinos e ska.</li>
+                        <li><strong>Legião Urbana:</strong> A poesia de Renato Russo que marcou gerações.</li>
+                    </ul>
+                </div> 
+            </section>
+
+            <section>
+                <h2>Comparativo das Bandas</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th><i>Banda</i></th>
+                            <th><i>Origem</i></th>
+                            <th><i>Vocalista Principal</i></th>
+                            <th><i>Ano de Formação</i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Titãs</td>
+                            <td>São Paulo - SP</td>
+                            <td>Vários (Sérgio Britto, Branco Mello, etc)</td>
+                            <td rowspan="2">1982</td>
+                        </tr>
+                        <tr>
+                            <td>Charlie Brown Jr.</td>
+                            <td>Santos - SP</td>
+                            <td>Chorão</td>
+                        </tr>
+                        <tr>
+                            <td>Paralamas do Sucesso</td>
+                            <td>Seropédica - RJ</td>
+                            <td>Herbert Vianna</td>
+                            <td rowspan="2">1982</td>
+                        </tr>
+                        <tr>
+                            <td>Legião Urbana</td>
+                            <td>Brasília - DF</td>
+                            <td>Renato Russo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Galeria e Acessibilidade</h2>
+                <div>
+                    <h3><i>Banda Titãs</i></h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFA-RI3fBmYAVOU1lC_ECc8DhxVhNSf89kPw&s" alt="bandas Titãs" width="350" height="350"> 
+                </div>
+
+                <div>
+                    <h3><i>Charlie brown Jr</i></h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTcia9y86kHJ0OJU8SD5IceXyTGGrfXiqgA&s" alt="Charlie brown Jr" width="350" height="350">
+                </div>
+
+                <div>
+                    <h3><i>Banda paralamas do Sucesso</i></h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkXkvOA001o8JIHiAT1rYucdZ4ukDodMPqkA&s" alt="Banda paralamas do Sucesso" width="350" height="350"> 
+                </div>
+
+                <div>
+                    <h3><i>Banda Legião Urbana</i></h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzlMeoMzIpUdHrsPelFD5-jVCh6ck6uM96VA&s" alt="Banda Legião Urbana" width="350" height="350"> 
+                </div>
+
+                <p><strong>Nota sobre Acessibilidade:</strong> O atributo <code>alt</code> é essencial porque permite que softwares de leitura de tela descrevam a imagem para usuários com deficiência visual. Além disso, se a conexão cair e a imagem não carregar, o texto aparecerá no lugar, mantendo o contexto da página.</p>
+            </section>
+
+            <section>
+                <h3><i><strong>FALE CONOSCO!</strong></i></h3>
+                <fieldset class="caixa-contato">
+                    <legend><strong>Dúvidas sobre Bandas</strong></legend>
+                    <form action="#" method="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensagem">Sua dúvida:</label>
+                        <textarea id="mensagem" name="mensagem" rows="8" required></textarea>
+
+                        <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+
+        <footer>
+            <p>Explore mais discografias no <a href="https://www.letras.mus.br" target="_blank" rel="noopener noreferrer">Portal Letras</a>.</p>
+        </footer>
+
+    </div>
     
 </body>
 </html>
