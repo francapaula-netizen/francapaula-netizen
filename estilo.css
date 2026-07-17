@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,34 +9,62 @@ body {
     background-color: #b9b9b9; 
     color: #000000; 
     padding: 20px;
-
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-header {
-    text-align: center;
-    font-size: 30px;
-    border-bottom: 4px solid #b3b3b3; 
+/* --- MODIFICADO: CONFIGURAÇÃO DE LAYOUT DO TOPO COM FLEXBOX --- */
+.topo-site {
+    display: flex;         /* Torna a caixa pai flexível, colocando imagem e texto lado a lado */
+    align-items: center;   /* Alinha verticalmente a logo com o texto no centro */
+    justify-content: center; /* Centraliza o bloco inteiro do cabeçalho */
     background-color: #969696;
+    border-bottom: 4px solid #b3b3b3; 
+    padding: 15px;
 }
-h1 {
+
+/* Configuração da div que segura os textos dentro do cabeçalho flexível */
+.titulos-topo {
+    text-align: left;      /* Alinha os textos à esquerda, ideal ao lado de uma imagem */
+}
+
+/* Ajustes visuais nos textos internos do topo */
+.titulos-topo h1 {
     font-size: 54px;
-color: #ffffff;
-background-color: #342b57;
-padding: 15px;
+    color: #ffffff;
+    background-color: #342b57;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+.titulos-topo p {
+    color: #ffffff;
+    background-color: #342b57;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+/* Estilo exclusivo para a Imagem do Logotipo no topo */
+.logo-topo {
+    max-height: 120px;     /* Controla a altura máxima para não desconfigurar o topo */
+    width: auto;           /* Mantém a proporção da largura automaticamente */
+    margin-right: 20px;    /* Dá um respiro entre a logo e os textos */
+    margin-bottom: 0;      /* Remove a margem inferior herdada da tag geral img */
+    border: none !important; /* Remove a borda roxa das imagens padrões */
 }
 
 h2 {
-font-size: 25px;
-color: #ffffff;
-background-color: #342b57;
-padding: 15px;
-box-sizing: border-box;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #342b57;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-/* --- CONTINUAÇÃO DO SEU CSS --- */
-
-/* Configuração para as imagens ficarem bonitas */
+/* Configuração geral para as imagens da galeria ficarem bonitas */
 img {
     font-size: 30px;
     border: 3px solid #342b57; /* Borda roxa combinando com os títulos */
@@ -73,12 +100,13 @@ td {
     padding: 8px;
 }
 
-/* Estilo do formulário de contato */
-fieldset {
+/* Formulário de contato restrito e centralizado */
+.caixa-contato {
     border: 2px solid #342b57;
-    padding: 15px;
-    margin-top: 15px;
-    background-color: #f0f0f0; /* Fundo cinza claro para o formulário */
+    padding: 20px; 
+    margin: 20px auto 30px auto; 
+    background-color: #f0f0f0; 
+    max-width: 500px; 
 }
 
 legend {
@@ -86,21 +114,28 @@ legend {
     padding: 0 5px;
 }
 
-/* Caixa de texto e campos para digitar */
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+.caixa-contato label,
+.caixa-contato input,
+.caixa-contato textarea {
+    display: block; 
+    width: 100%;    
+    margin-bottom: 10px; 
 }
 
-/* Botão de enviar */
-button {
+.caixa-contato label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#btn-enviar {
+    display: block;
+    width: 100%;
     background-color: #342b57;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     font-weight: bold;
+    cursor: pointer; 
 }
 
 /* Rodapé da página */
@@ -117,4 +152,14 @@ footer p {
 
 footer a {
     color: #ffffff;
+}
+
+/* AJUSTADO: Seletor exclusivo para aumentar o tamanho do Logotipo no topo */
+.logo-topo {
+    height: 190px;         /* Aumentado o tamanho vertical da logo para dar destaque */
+    max-height: 190px;     
+    width: auto;           
+    margin-right: 28px;    /* Aumentado levemente o espaço ao lado da logo */
+    margin-bottom: 0;      
+    border: none !important; 
 }
